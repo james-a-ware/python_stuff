@@ -4,9 +4,13 @@
 tank_vol = int(input('Your Cylinder Volume: '))
 air_cons = int(input('Air you have consumed in L: '))
 d_time = int(input('Your total dive time: '))
-press = int(input('The max Atmospheric pressure experianced in BAR: '))
+press = int(input('The max Atmospheric pressure experianced in BAR: 10M is 1 '))
 
-def sac_val(tank_vol,air_cons,d_time,press):
-    return tank_vol*air_cons/d_time/press
+#add calculation that works out BAR from a max depth input
+
+def sac_val():
+    print (tank_vol*air_cons/d_time/press)
+
+#make the function hold a var that can be added to an f-string literal
 
 sac_val()
